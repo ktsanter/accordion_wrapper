@@ -1,0 +1,32 @@
+body {
+	color: black;
+	background-color: #eee;
+	font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+	font-size: 13px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.standard-title {
+	color: white;
+	background-color: #426296;
+  border: 1px solid white;
+  border-radius: 6px 6px 0px 0px;
+  font-size: 1.2em;
+  padding: 0.4em 0.2em 0.2em 0.4em;
+  margin-top: 0em;
+}
+
+.icon {
+  margin-left: 0.4em;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.label {
+  margin-top: 1.0em;
+}
+
+#description {
+  width: 50em;
+}
