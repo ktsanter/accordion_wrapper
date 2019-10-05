@@ -17,10 +17,17 @@ body {
   margin-top: 0em;
 }
 
-.icon {
+#embedIcon {
   margin-left: 0.4em;
   font-size: 0.9em;
   cursor: pointer;
+}
+
+#embedComplete {
+  font-style: italic;
+  font-size: 0.8em;
+  padding-left: 0.8em;
+  display: none;
 }
 
 .label {
@@ -29,4 +36,8 @@ body {
 
 #description {
   width: 50em;
+}
+
+#preview {
+  border: 1px solid black;
 }

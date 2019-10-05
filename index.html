@@ -6,21 +6,28 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">    
     <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/clipboard_copy.js"></script>
+    <script src="scripts/main.js"></script>	
+    <script type="text/javascript" src="https://drive.google.com/uc?id=1tTJ69DYuDyqVTIwkYuUFfHPC9hJoh66z"></script>
   </head>
 
   <body>
     <div class="standard-title"> 
       Accordion wrapper embed generator 
-      <i id="embed" class="icon fas fa-code"></i>
+      <i id="embedIcon" class="icon fas fa-code"></i>
+      <span id="embedComplete"> embed code copied to clipboard </span>
     </div>
     
     <div class="label"> description </div>
-    <input id="description" type="text">
+    <input id="description" type="text" placeholder="description of contents - displayed whether or not contents are collapsed">
     
     <div class="label"> contents </div>
-    <textarea id="contents" rows="16" cols="92"> </textarea>
+    <textarea id="contents" rows="16" cols="92" placeholder="code to be enclosed within the wrapper"></textarea>
     
-    <script src="scripts/main.js"></script>	
+    <div class="label"> preview </div>
+    <div id="preview"> </div>
+    
     <script>
       document.addEventListener('DOMContentLoaded', app.init);
     </script>
