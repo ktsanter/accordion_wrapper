@@ -44,10 +44,15 @@ const app = function () {
 	//--------------------------------------------------------------------------
   function makeEmbedCode() {
     var embedCode = '';
+    var iconHref = 'href="#bogus"';
+    var iconStyle = 'style="cursor: pointer; text-decoration: none; color: inherit;"';
+    var iconTitle = 'title="expand"';
+    var iconOnClick = 'onclick="toggleAccordionContents(this.parentNode)"';
+    var iconSymbol = '&#9658;';
     
     embedCode += '<div>';
     embedCode += '<script type="text/javascript" src="' + ACCORDION_WRAPPER_CODE_URL + '"></script>';
-    embedCode += '<span style="cursor: pointer"; onclick="toggleAccordionContents(this.parentNode)"> &#9658; </span>';
+    embedCode += '<a ' + iconHref + ' ' + iconStyle + ' ' + iconTitle + ' ' + iconOnClick + '"> ' + iconSymbol + '</a>';
     embedCode += page.description.value;
     embedCode += '<div style="display:none;">';
     embedCode += page.embedContents.value;
